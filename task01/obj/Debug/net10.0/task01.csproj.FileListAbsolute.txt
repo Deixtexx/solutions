@@ -1,0 +1,12 @@
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\bin\Debug\net10.0\task01.deps.json
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\bin\Debug\net10.0\task01.dll
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\bin\Debug\net10.0\task01.pdb
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.GeneratedMSBuildEditorConfig.editorconfig
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.AssemblyInfoInputs.cache
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.AssemblyInfo.cs
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.csproj.CoreCompileInputs.cache
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.sourcelink.json
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.dll
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\refint\task01.dll
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\task01.pdb
+\\wsl.localhost\Debian\home\sereb\reps\tasks_summer\solutions\task01\obj\Debug\net10.0\ref\task01.dll
