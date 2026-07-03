@@ -1,4 +1,4 @@
-name: .NET Core xUnit Parallel Tests
+name: .NET Core xUnit Tests
 
 on:
   push:
@@ -7,32 +7,21 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  run-tests:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # Укажите здесь пути к вашим файлам решений
-        solution: [ './practice2026/practice2026.slnx', './practice2026_2/practice2026_2/practice2026_2.slnx' ]
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
-    - name: Setup .NET
+    - name: Setup .NET SDK
       uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: '8.0.x'
+        dotnet-version: '10.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore ${{ matrix.solution }}
+    - name: Test First Solution
+      run: dotnet test ./practice2026/practice2026.slnx --verbosity normal
 
-    - name: Build
-      run: dotnet build ${{ matrix.solution }} --no-restore
+    - name: Test Second Solution
+      run: dotnet test ./practice2026_2/practice2026_2/practice2026_2.slnx --verbosity normal
 
-    - name: Test
-      run: dotnet test ${{ matrix.solution }} --no-build --verbosity normal
-
-    - name: Build
-      run: dotnet build --no-restore
-
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
