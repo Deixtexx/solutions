@@ -1,0 +1,27 @@
+name: .NET Core xUnit Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: '10.0.x'
+
+    - name: Test First Solution
+      run: dotnet test ./practice2026/practice2026.slnx --verbosity normal
+
+    - name: Test Second Solution
+      run: dotnet test ./practice2026_2/practice2026_2/practice2026_2.slnx --verbosity normal
+
