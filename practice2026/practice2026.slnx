@@ -3,4 +3,10 @@
   <Project Path="task01tests/task01tests.csproj" Id="331eb752-305b-4034-ba57-207ce0f93d7c" />
   <Project Path="task02/task02.csproj" Id="cb17a3ae-8b54-4a19-8ac2-21fbc8abf4f3" />
   <Project Path="task02tests/task02tests.csproj" Id="915058eb-1ce5-4987-9c0e-5a092a6b77c9" />
+  <Project Path="task03/task03.csproj" Id="58ab0ae3-7167-4b40-9272-d3671cda30bc" />
+  <Project Path="task03tests/task03tests.csproj" Id="d83fd4de-6682-4c6d-a80b-8e2efefcccc7" />
+  <Project Path="task04/task04.csproj" Id="d358f595-fdc4-4d69-ad11-37f40cf74b6f" />
+  <Project Path="task04tests/task04tests.csproj" Id="ecc548f3-0b6b-444e-b5e8-79f9d0983763" />
+  <Project Path="task05/task05.csproj" Id="de8c90d5-af94-45de-8c64-9a69f72e46dc" />
+  <Project Path="task05tests/task05tests.csproj" Id="2c0f0315-b038-4e69-8dd2-9437d1f73c37" />
 </Solution>
