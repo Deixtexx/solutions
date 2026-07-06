@@ -6,7 +6,11 @@ namespace task03
     {
         private readonly List<T> _items = new();
 
-        public void Add(T item) => _items.Add(item);
+        public void Add(T item)
+        {
+            if (item != null) _items.Add(item);
+            else throw new ArgumentException("попытка добавления null элемента");
+        }
         public IEnumerator<T> GetEnumerator() => _items.GetEnumerator();
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
@@ -25,7 +29,9 @@ namespace task03
 
         public IEnumerable<T> FilterAndSort(Func<T, bool> predicate, Func<T, IComparable> keySelector)
         {
-            return _items.Where(predicate).OrderBy(keySelector);
+            if (predicate != null && keySelector != null)
+                return _items.Where(predicate).OrderBy(keySelector);
+            else throw new ArgumentException("null фильтр и селектор");
         }
     }
 }
