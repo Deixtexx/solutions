@@ -13,10 +13,10 @@ namespace task07
             var versionAttr = (VersionAttribute) Attribute.GetCustomAttribute(type, typeof(VersionAttribute));
 
             if (displayNameAttr != null)
-                Console.WriteLine(displayNameAttr.DisplayName);
+                Console.WriteLine($"{type.Name} - {displayNameAttr.DisplayName}");
 
             if (versionAttr != null)
-                Console.WriteLine(versionAttr);
+                Console.WriteLine($"{type.Name} - {versionAttr}");
 
             var properties = type.GetProperties();
             var methods = type.GetMethods();
