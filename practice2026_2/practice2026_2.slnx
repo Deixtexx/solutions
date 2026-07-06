@@ -1,0 +1,22 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="task07" />
+    <BuildType Name="task09" />
+  </Configurations>
+  <Project Path="task07/task07.csproj" />
+  <Project Path="task07tests/task07tests.csproj">
+    <BuildType Solution="task09|*" Project="Debug" />
+    <Build Solution="task09|*" Project="false" />
+  </Project>
+  <Project Path="task09/task09.csproj" Id="e54dbf5e-a47f-4713-ac44-1e64c947139b">
+    <BuildType Solution="task07|*" Project="Release" />
+  </Project>
+  <Project Path="task09tests/task09tests.csproj" Id="114d3635-cd29-437f-b9c8-7e4a2df06b4a">
+    <BuildType Solution="task07|*" Project="Release" />
+  </Project>
+  <Project Path="TestLib/TestLib.csproj" Id="a601dbe8-3181-4abb-8f08-b4a6d81f1bae">
+    <BuildType Solution="task07|*" Project="Release" />
+  </Project>
+</Solution>
