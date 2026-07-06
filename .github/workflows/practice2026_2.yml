@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [ main ]
     paths:
-      - 'practice2026_2/**' # Запуск только при изменениях в этой папке
+      - 'practice2026_2/**'
 
 jobs:
   test:
@@ -17,13 +17,13 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '10.0'
-          cache: true
 
-      - name: Restore dependencies
+      - name: Restore
         run: dotnet restore practice2026_2/
 
       - name: Build
-        run: dotnet build practice2026_2/ --no-restore --configuration Release
+        run: dotnet build practice2026_2/ --no-restore
 
-      - name: Run xUnit Tests
-        run: dotnet test practice2026_2/ --no-build --configuration Release
+      - name: Test
+        run: dotnet test practice2026_2/ --no-build
+
