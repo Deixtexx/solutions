@@ -7,6 +7,7 @@
   </Configurations>
   <Project Path="task07/task07.csproj" />
   <Project Path="task07tests/task07tests.csproj">
+    <BuildType Solution="task09|*" Project="Debug" />
     <Build Solution="task09|*" Project="false" />
   </Project>
   <Project Path="task08/task09.csproj" Id="e54dbf5e-a47f-4713-ac44-1e64c947139b">
