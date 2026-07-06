@@ -1,0 +1,34 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="task02" />
+    <BuildType Name="task03" />
+  </Configurations>
+  <Project Path="task01/task01.csproj" Id="20083934-16c7-42ec-ab61-815f5c784e1d">
+    <BuildType Solution="task02|*" Project="Release" />
+    <BuildType Solution="task03|*" Project="Release" />
+    <Build Solution="task02|*" Project="false" />
+    <Build Solution="task03|*" Project="false" />
+  </Project>
+  <Project Path="task01tests/task01tests.csproj" Id="331eb752-305b-4034-ba57-207ce0f93d7c">
+    <BuildType Solution="task02|*" Project="Release" />
+    <BuildType Solution="task03|*" Project="Release" />
+    <Build Solution="task02|*" Project="false" />
+    <Build Solution="task03|*" Project="false" />
+  </Project>
+  <Project Path="task02/task02.csproj" Id="cb17a3ae-8b54-4a19-8ac2-21fbc8abf4f3">
+    <BuildType Solution="task03|*" Project="Release" />
+    <Build Solution="task03|*" Project="false" />
+  </Project>
+  <Project Path="task02tests/task02tests.csproj" Id="915058eb-1ce5-4987-9c0e-5a092a6b77c9">
+    <BuildType Solution="task03|*" Project="Release" />
+    <Build Solution="task03|*" Project="false" />
+  </Project>
+  <Project Path="task03/task03.csproj">
+    <BuildType Solution="task02|*" Project="Release" />
+  </Project>
+  <Project Path="task03tests/task03tests.csproj">
+    <BuildType Solution="task02|*" Project="Release" />
+  </Project>
+</Solution>
