@@ -18,12 +18,8 @@ jobs:
         with:
           dotnet-version: '10.0'
 
-      - name: Restore Dependencies
-        run: dotnet restore practice2026_2/ -c ${{ github.head_ref || github.ref_name }}
-
       - name: Build Solution
-        run: dotnet build practice2026_2/ -c ${{ github.head_ref || github.ref_name }} --no-restore
-
+        run: dotnet build practice2026_2/ -c ${{ github.head_ref || github.ref_name }}
       - name: Run Tests
         run: dotnet test practice2026_2/ -c ${{ github.head_ref || github.ref_name }} --no-build
 
