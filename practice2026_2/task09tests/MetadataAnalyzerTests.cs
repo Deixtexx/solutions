@@ -17,7 +17,7 @@ namespace task09tests
         public void AnalyzeAssembly_ShouldContainClassAndMethodsInfo()
         {
             string baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            string dllPath = Path.GetFullPath(Path.Combine(baseDir, @"..\..\..\..\TestLib\bin\Debug\net10.0\TestLib.dll"));
+            string dllPath = Path.GetFullPath(Path.Combine(baseDir, "TestLib.dll"));
 
             string output = MetadataAnalyzer.AnalyzeAssembly(dllPath);
 
