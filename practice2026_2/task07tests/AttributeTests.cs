@@ -61,7 +61,7 @@ namespace task07tests
 
                 ReflectionHelper.PrintTypeInfo(typeof(SampleClass));
 
-                var result = sw.ToString().Split("\r\n");
+                var result = sw.ToString().Split(Environment.NewLine);
                 Assert.Equal(5, result.Length); //в конце добавляется "", поэтому 5 вместо 4
                 Assert.Contains("Пример класса", result);
                 Assert.Contains("1.0", result);
