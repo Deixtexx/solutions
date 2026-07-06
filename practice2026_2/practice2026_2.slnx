@@ -2,18 +2,26 @@
   <Configurations>
     <BuildType Name="Debug" />
     <BuildType Name="Release" />
-    <BuildType Name="test08" />
+    <BuildType Name="task08" />
   </Configurations>
-  <Project Path="CommandLib/CommandLib.csproj" />
-  <Project Path="CommandRunner/CommandRunner.csproj" />
-  <Project Path="FileSystemCommands/FileSystemCommands.csproj" />
+  <Project Path="CommandLib/CommandLib.csproj">
+    <BuildType Solution="task08|*" Project="Debug" />
+  </Project>
+  <Project Path="CommandRunner/CommandRunner.csproj">
+    <BuildType Solution="task08|*" Project="Debug" />
+  </Project>
+  <Project Path="FileSystemCommands/FileSystemCommands.csproj">
+    <BuildType Solution="task08|*" Project="test08" />
+  </Project>
   <Project Path="task07/task07.csproj">
-    <BuildType Solution="test08|*" Project="Release" />
-    <Build Solution="test08|*" Project="false" />
+    <BuildType Solution="task08|*" Project="Release" />
+    <Build Solution="task08|*" Project="false" />
   </Project>
   <Project Path="task07tests/task07tests.csproj">
-    <BuildType Solution="test08|*" Project="Release" />
-    <Build Solution="test08|*" Project="false" />
+    <BuildType Solution="task08|*" Project="Release" />
+    <Build Solution="task08|*" Project="false" />
   </Project>
-  <Project Path="task08tests/task08tests.csproj" />
+  <Project Path="task08tests/task08tests.csproj">
+    <BuildType Solution="task08|*" Project="Debug" />
+  </Project>
 </Solution>

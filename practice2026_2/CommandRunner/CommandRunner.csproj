@@ -5,7 +5,7 @@
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Configurations>Debug;Release;test08</Configurations>
+    <Configurations>Debug;Release;task08</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
