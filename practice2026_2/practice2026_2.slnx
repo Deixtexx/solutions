@@ -10,10 +10,10 @@
     <BuildType Solution="task09|*" Project="Debug" />
     <Build Solution="task09|*" Project="false" />
   </Project>
-  <Project Path="task08/task09.csproj" Id="e54dbf5e-a47f-4713-ac44-1e64c947139b">
+  <Project Path="task09/task09.csproj" Id="e54dbf5e-a47f-4713-ac44-1e64c947139b">
     <BuildType Solution="task07|*" Project="Release" />
   </Project>
-  <Project Path="task08tests/task09tests.csproj" Id="114d3635-cd29-437f-b9c8-7e4a2df06b4a">
+  <Project Path="task09tests/task09tests.csproj" Id="114d3635-cd29-437f-b9c8-7e4a2df06b4a">
     <BuildType Solution="task07|*" Project="Release" />
   </Project>
   <Project Path="TestLib/TestLib.csproj" Id="a601dbe8-3181-4abb-8f08-b4a6d81f1bae">
