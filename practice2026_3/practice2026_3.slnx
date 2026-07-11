@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="task13" />
+  </Configurations>
+  <Project Path="StudentApp/StudentApp.csproj" Id="3679a8a6-5146-4ff1-89e5-6818b8784368" />
+  <Project Path="task13/task13.csproj" Id="7b2df84c-a108-4712-9811-e7dd5cccf468">
+    <BuildType Solution="Debug|*" Project="task13" />
+  </Project>
+  <Project Path="task13tests/task13tests.csproj" Id="acfa2086-aa59-4e78-b97e-ca8672b2e7f6">
+    <BuildType Solution="Debug|*" Project="task13" />
+  </Project>
+</Solution>
