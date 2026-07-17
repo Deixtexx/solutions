@@ -1,0 +1,24 @@
+name: Practice 2026 4 CI
+
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'practice2026_4/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0'
+
+      - name: Build Solution
+        run: dotnet build practice2026_4/ -c ${{ github.head_ref || github.ref_name }}
+      - name: Run Tests
+        run: dotnet test practice2026_4/ -c ${{ github.head_ref || github.ref_name }} --no-build
