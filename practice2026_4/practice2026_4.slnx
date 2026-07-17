@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <BuildType Name="task17" />
+  </Configurations>
+  <Project Path="task17/task17.csproj" Id="df04b797-f855-4dc4-b0a0-b92e8fdaeabe" />
+  <Project Path="task17tests/task17tests.csproj" Id="08efac0e-3d7c-4287-9c6c-fc926ed06fbb" />
+</Solution>
