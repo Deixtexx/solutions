@@ -4,15 +4,26 @@
     <BuildType Name="Release" />
     <BuildType Name="task17" />
     <BuildType Name="task18" />
+    <BuildType Name="task19" />
   </Configurations>
   <Project Path="task17/task17.csproj" Id="df04b797-f855-4dc4-b0a0-b92e8fdaeabe" />
   <Project Path="task17tests/task17tests.csproj" Id="08efac0e-3d7c-4287-9c6c-fc926ed06fbb">
     <BuildType Solution="task18|*" Project="task17" />
+    <BuildType Solution="task19|*" Project="Debug" />
   </Project>
   <Project Path="task18/task18.csproj" Id="7d8d4164-d484-4245-8d8d-5f3c45352035">
     <BuildType Solution="task17|*" Project="Release" />
   </Project>
   <Project Path="task18tests/task18tests.csproj" Id="e1a9a8d4-3d6b-4341-88e8-5c1cc2db96d0">
+    <BuildType Solution="task17|*" Project="Release" />
+    <BuildType Solution="task18|*" Project="Release" />
+    <BuildType Solution="task19|*" Project="Debug" />
+  </Project>
+  <Project Path="task19/task19.csproj" Id="5a5c5a89-ba92-414e-874c-9222d2247052">
+    <BuildType Solution="task17|*" Project="Release" />
+    <BuildType Solution="task18|*" Project="Release" />
+  </Project>
+  <Project Path="task19tests/task19tests.csproj" Id="bf5998c5-d3c9-4715-888d-06118694e9b2">
     <BuildType Solution="task17|*" Project="Release" />
     <BuildType Solution="task18|*" Project="Release" />
   </Project>

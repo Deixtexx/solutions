@@ -14,6 +14,7 @@ namespace task18
         private readonly ExceptionHandler _exceptionHandler;
 
         private volatile bool _isRunning = true;
+        private volatile bool _isHardStop = false;
 
         public LongRunningServerThread(IScheduler scheduler, ExceptionHandler exceptionHandler)
         {
@@ -24,6 +25,7 @@ namespace task18
 
         public void Start() => _thread.Start();
         public void Join() => _thread.Join();
+        public bool IsAlive() => _thread.IsAlive;
         public void Stop()
         {
             _isRunning = false;
@@ -40,10 +42,19 @@ namespace task18
             _scheduler.Add(command);
             _signal.Set();
         }
+        public void TriggerHardStop()
+        {
+            if (Thread.CurrentThread != _thread)
+                throw new InvalidOperationException("HardStop можно вызвать только изнутри целевого потока");
+            _isHardStop = true;
+            _isRunning = false;
+        }
         private void RunLoop()
         {
             while(_isRunning)
             {
+                if (_isHardStop) break;
+
                 bool processedWork = false;
 
                 if (_queue.TryDequeue(out ICommand task))
